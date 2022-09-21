@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+/* Beginning of actual styling */
+
+body {
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(./images/pattern-background-mobile.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 23rem;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.header-container {
+  background-image: url(./images/illustration-hero.svg);
+  height: 12.5rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.main-container {
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color: gray;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+a {
+  color: rgb(31, 47, 86);
+  font-weight: 700;
+}
+
+a:hover {
+  color: rgb(31, 47, 86, 0.5);
+  transition: all ease-in 0.5s;
+}
+
+.sub-plan {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  max-width: 90%;
+  background-color: hsl(225, 100%, 98%);
+  padding: 0.5rem;
+  border-radius: 15px;
+  font-size: 0.75rem;
+}
+
+.plan-name {
+  font-weight: 700;
+}
+
+.plan-price {
+  color: lightgray;
+}
+
+.payment-button {
+  background-color: rgb(56, 41, 224);
+  max-width: 90%;
+  text-align: center;
+  margin: 1rem auto 0 auto;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 12px 7px 1px rgba(56, 41, 224, 0.2);
+}
+
+.payment-button > a {
+  color: white;
+  text-decoration: none;
+}
+
+.payment-button:hover {
+  background-color: rgb(56, 41, 224, 0.8);
+  transition: all ease-in 0.5s;
+}
+
+.cancel-order {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.cancel-order > a {
+  font-size: 0.75rem;
+  color: gray;
+  text-decoration: none;
+}
+
+.cancel-order > a:hover {
+  font-weight: 900;
+  color: rgb(56, 41, 224);
+}
+
+@media (min-width: 90rem) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
